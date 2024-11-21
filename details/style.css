@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background: #dbdbdb;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 100px; /* Ajustez selon la hauteur de votre header */
+
+}
+
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background: #2b2b2b;
+    z-index: 1000; 
+}
+.logo {
+    width: 60px; 
+    height: auto; 
+    margin-right: 20px;
+
+}
+
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 5px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 13px 17px;
+    margin: 60px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover, 
+header ul li a.active2 {
+    background: #fff;
+    color: #2b1055;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.product-details {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    text-align: left;
+}
+
+.grid-container > div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.product-details img {
+    width: 40%; /* Image prendra toute la largeur de son conteneur */
+    height: auto; /* Hauteur proportionnelle à la largeur */
+}
+
+.product-details button {
+    padding: 10px 20px;
+    background-color: #ff5252;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.product-details button:hover {
+    background-color: #ff1744;
+}

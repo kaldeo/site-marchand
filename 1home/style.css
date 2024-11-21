@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Déplacer la définition de la police vers le body */
+
+    background: #dbdbdb;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative; /* Ajout de la position relative pour permettre le positionnement absolu des éléments h1 et h2 */
+    overflow: hidden; /* Empêcher le défilement de la page */
+
+}
+
+
+header { 
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background: #2b2b2b;
+    z-index: 1000; 
+}
+.logo {
+    width: 60px; 
+    height: auto; 
+    margin-right: 20px;
+}
+
+
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 5px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 13px 17px;
+    margin: 60px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover, 
+header ul li a.active {
+    background: #fff;
+    color: #2b1055;
+}
+
+
+
+
+.content {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    overflow-y: auto; /* Activer le défilement vertical pour le contenu si nécessaire */
+    height: 100vh; /* Hauteur maximale égale à la hauteur de la fenêtre visible */
+    box-sizing: border-box; /* Inclure le padding dans la hauteur */
+}
+
+/* Styles pour la section de gauche (image) */
+.left-section {
+    flex: 1; /* La section de gauche prendra autant d'espace que possible */
+}
+
+.left-section img {
+    max-width: 90%; /* Ajuster la largeur de l'image pour qu'elle s'adapte à son conteneur */
+    height: auto; /* Permettre le redimensionnement proportionnel de l'image */
+    display: block; /* Assurer le bon affichage de l'image */
+}
+
+/* Styles pour la section de droite (titres) */
+.right-section {
+    flex: 1; /* La section de droite prendra autant d'espace que possible */
+    padding-left: 50px; /* Espacement entre l'image et les titres */
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    padding: 20px 40px;
+    background: #2b2b2b;
+    border-radius: 20px;
+    margin-bottom: 20px; /* Ajout d'une marge en bas pour séparer les titres */
+}
+
+h2 {
+    color: #000000;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    padding: 10px 20px;
+    background: #ffffff;
+    border-radius: 20px;
+}

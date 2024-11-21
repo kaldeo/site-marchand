@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background: #dbdbdb;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+header { 
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background: #2b2b2b;
+    z-index: 1000; 
+}
+.logo {
+    width: 60px; 
+    height: auto; 
+    margin-right: 20px;
+}
+
+
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 5px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 13px 17px;
+    margin: 60px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover, 
+header ul li a.active5 {
+    background: #fff;
+    color: #2b1055;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.panier-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.produit {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.produit:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.produit h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.produit p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.produit img {
+    width: 180px;
+    height: 300px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.produit button {
+    background-color: #ff5252;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.produit button:hover {
+    background-color: #ff1744;
+}
+
+.panier-vide {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+
+#vider-panier-btn {
+    background-color: #ff5252;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+#vider-panier-btn:hover {
+    background-color: #ff1744;
+}
+
+

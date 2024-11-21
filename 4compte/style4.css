@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+body {
+    background: #dbdbdb;
+    background-size: cover;
+    min-height: 100vh;
+}
+header { 
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background: #2b2b2b;
+    z-index: 1000; 
+}
+.logo {
+    width: 60px; 
+    height: auto; 
+    margin-right: 20px;
+}
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    list-style: none;
+    margin-left: 5px;
+
+}
+header ul li a {
+    text-decoration: none;
+    padding: 13px 17px;
+    margin: 60px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover, 
+header ul li a.active4 {
+    background: #fff;
+    color: #2b1055;
+}
+.infoperso {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 50px;
+    width: 445px;
+    max-height: 500px; /* Définition de la hauteur maximale */
+    overflow-y: auto; /* Ajout d'une barre de défilement en cas de dépassement de la hauteur */
+    float: left;
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box; /* Assure que la taille inclut le padding et la bordure */
+}
+.infoperso:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.infoperso h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.infoperso div {
+    margin-bottom: 6px;
+}
+.infoperso label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+.infoperso span {
+    display: inline-block;
+    width: calc(100% - 20px); /* Pour tenir compte du padding */
+    padding: 8px;
+    margin-bottom: 5px; /* Ajustement de la marge entre les valeurs */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+   
+}
+.infoperso a[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px; /* Espacement en haut du lien */
+}
+.infoperso a[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.modifications {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 50px;
+    width: 445px;
+    height: 500px;
+    float: right;
+    transition: transform 0.3s ease-in-out;
+}
+.modifications:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+label, .infoperso label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+.infoperso span
+  {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button[type="submit"], .modifications button[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px; /* Espacement en haut du lien */
+}
+button[type="submit"]:hover, .modifications button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.contain{
+    display: flex;
+    justify-content: space-evenly
+}
+

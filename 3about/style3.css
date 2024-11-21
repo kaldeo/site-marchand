@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background: #dbdbdb;
+    background-size: cover;
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+
+}
+
+header { 
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background: #2b2b2b;
+    z-index: 1000; 
+}
+.logo {
+    width: 60px; 
+    height: auto; 
+    margin-right: 20px;
+}
+
+
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 5px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 13px 17px;
+    margin: 60px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover, 
+header ul li a.active3 {
+    background: #fff;
+    color: #2b1055;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.presentation h1,
+.presentation-produits h1,
+.raison-creation h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+
+/* Styles pour les boîtes côte à côte */
+.presentation-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacement entre les boîtes */
+    margin: 30px 30PX;
+
+}
+
+.presentation {
+    flex: 1 1 calc(50% - 10px); /* Chaque boîte occupe la moitié de la largeur avec un espacement */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Style pour la boîte en dessous qui prend la largeur complète */
+.full-width-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.presentation h1, .full-width-box H1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+
+}
